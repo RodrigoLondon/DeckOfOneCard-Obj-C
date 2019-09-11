@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CardViewController.h
 //  DeckOfOneCard-Obj-C
 //
 //  Created by Lewis Jones on 16/02/2019.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CardViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

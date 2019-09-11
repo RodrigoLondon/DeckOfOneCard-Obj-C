@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		49077702221871F600756625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49077701221871F600756625 /* AppDelegate.m */; };
-		49077705221871F600756625 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49077704221871F600756625 /* ViewController.m */; };
 		49077708221871F600756625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49077706221871F600756625 /* Main.storyboard */; };
 		4907770A221871F700756625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49077709221871F700756625 /* Assets.xcassets */; };
 		4907770D221871F700756625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4907770B221871F700756625 /* LaunchScreen.storyboard */; };
 		49077710221871F700756625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4907770F221871F700756625 /* main.m */; };
+		4907771D2218741A00756625 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4907771C2218741A00756625 /* Card.m */; };
+		490777202218806500756625 /* CardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4907771F2218806500756625 /* CardController.m */; };
+		490777232218808300756625 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490777222218808300756625 /* CardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		490776FD221871F600756625 /* DeckOfOneCard-Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeckOfOneCard-Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49077700221871F600756625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49077701221871F600756625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		49077703221871F600756625 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		49077704221871F600756625 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		49077707221871F600756625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49077709221871F700756625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4907770C221871F700756625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4907770E221871F700756625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4907770F221871F700756625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4907771B2218741A00756625 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		4907771C2218741A00756625 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		4907771E2218806500756625 /* CardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardController.h; sourceTree = "<group>"; };
+		4907771F2218806500756625 /* CardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardController.m; sourceTree = "<group>"; };
+		490777212218808300756625 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		490777222218808300756625 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,61 @@
 		490776FF221871F600756625 /* DeckOfOneCard-Obj-C */ = {
 			isa = PBXGroup;
 			children = (
-				49077700221871F600756625 /* AppDelegate.h */,
-				49077701221871F600756625 /* AppDelegate.m */,
-				49077703221871F600756625 /* ViewController.h */,
-				49077704221871F600756625 /* ViewController.m */,
-				49077706221871F600756625 /* Main.storyboard */,
-				49077709221871F700756625 /* Assets.xcassets */,
-				4907770B221871F700756625 /* LaunchScreen.storyboard */,
-				4907770E221871F700756625 /* Info.plist */,
-				4907770F221871F700756625 /* main.m */,
+				4907771A2218737C00756625 /* Resources */,
+				490777162218731B00756625 /* Model */,
+				490777192218736B00756625 /* Views */,
+				490777182218734600756625 /* Controller */,
+				490777172218732E00756625 /* ViewController */,
 			);
 			path = "DeckOfOneCard-Obj-C";
+			sourceTree = "<group>";
+		};
+		490777162218731B00756625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4907771B2218741A00756625 /* Card.h */,
+				4907771C2218741A00756625 /* Card.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		490777172218732E00756625 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				490777212218808300756625 /* CardViewController.h */,
+				490777222218808300756625 /* CardViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		490777182218734600756625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4907771E2218806500756625 /* CardController.h */,
+				4907771F2218806500756625 /* CardController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		490777192218736B00756625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49077706221871F600756625 /* Main.storyboard */,
+				4907770B221871F700756625 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4907771A2218737C00756625 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49077700221871F600756625 /* AppDelegate.h */,
+				49077701221871F600756625 /* AppDelegate.m */,
+				4907770E221871F700756625 /* Info.plist */,
+				4907770F221871F700756625 /* main.m */,
+				49077709221871F700756625 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49077705221871F600756625 /* ViewController.m in Sources */,
+				490777232218808300756625 /* CardViewController.m in Sources */,
 				49077710221871F700756625 /* main.m in Sources */,
 				49077702221871F600756625 /* AppDelegate.m in Sources */,
+				4907771D2218741A00756625 /* Card.m in Sources */,
+				490777202218806500756625 /* CardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DeckOfOneCard-Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard-Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "DeckOfOneCard-Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCard-Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
